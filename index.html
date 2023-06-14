@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  
+  <!-- Sticky Navigation -->
+  
+  <div class="navbar sticky">
+    <div class="logo">
+      <img src="img/Layer 1.png" alt="Logo">
+    </div>
+    <a href="#" class="nav-link" onclick="showSection('history-section')">01. HISTORY</a>
+    <a href="#" class="nav-link" onclick="showSection('team-section')">02. TEAM</a>
+  </div>
+  
+  <div class="section" id="history-section">
+    <h2>HISTORY</h2>
+    <p>Updating soon...</p>
+    <button class="close-btn" onclick="hideSection('history-section')">Close</button>
+  </div>
+  
+  <div class="section" id="team-section">
+    <h2>TEAM</h2>
+    <p>Updating soon...</p>
+    <button class="close-btn" onclick="hideSection('team-section')">Close</button>
+  </div>
+  
+  <section class="cover">
+  <img src="img/Layer 628.png" alt="coverimg">
+  <div class="navbar top">
+    <div class="logo">
+      
+      <img src="img/Logo2.png" alt="Logo">
+    </div>
+  
+    <a href="#" class="nav-link" onclick="showSection('history-section')">01.HISTORY</a>
+    <a href="#" class="nav-link" onclick="showSection('team-section')">02.TEAM</a>
+  </div>
+</section>
+
+
+  <section class="history">
+        <img src="img/Bg.png" alt="historyimg">
+  </section>
+  
+  <!-- Carousel -->
+  <div class="carousel">
+    <div class="circle-nav">
+      <div class="nav-item active" onclick="showImage(0)"></div>
+      <div class="nav-item" onclick="showImage(1)"></div>
+      <div class="nav-item" onclick="showImage(2)"></div>
+      <div class="nav-item" onclick="showImage(3)"></div>
+    </div>
+    <div class="image-container">
+      <img src="img/Group 10.png" class="carousel-image active">
+      <img src="img/Group 8.png" class="carousel-image">
+      <img src="img/Group 10.png" class="carousel-image">
+      <img src="img/Group 8.png" class="carousel-image">
+    </div>
+  </div>
+  
+
+ <!-- mountain -->
+  <section class="mountain">
+     <div class="climb">
+      <img src="img/Text.png" alt="2climb">
+     </div>
+    </section>
+     <section class="mselect">
+      <div class="tab-container">
+        <div class="tab" data-target="mountain1">MOUNTAIN 1</div>
+        <div class="tab" data-target="mountain2">MOUNTAIN 2</div>
+      </div>
+      <div class="image-container">
+        <img id="mountain1" src="img/Tab 1.png" alt="Mountain 1" class="image">
+        <img id="mountain2" src="img/Tab 2.png" alt="Mountain 2" class="image">
+      </div>
+    </section>
+    
+  <!-- Footer -->
+  <div class="footer">
+    <div class="logo">
+      <img src="img/Logo2.png" alt="Logo" style="filter: invert(29%) sepia(18%) saturate(1300%) hue-rotate(183deg) brightness(95%) contrast(97%) drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.5));">
+    </div>
+    <p class="footer-caption" style="margin-left: 25%;">COPYRIGHT 2016. ALL RIGHTS RESERVED.</p>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
